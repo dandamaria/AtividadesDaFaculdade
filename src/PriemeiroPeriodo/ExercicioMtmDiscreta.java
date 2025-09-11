@@ -7,7 +7,7 @@ public class ExercicioMtmDiscreta {
     public static void main(String[] args) {
         /*
         Uma loja concede desconto se:
-        O cliente for estudante e menor de 25 anos,
+        O cliente for estudante e tem a idade menor que 25 anos,
         ou se for idoso (≥ 60 anos),
         Mas em nenhum caso se ele já usou desconto na última compra.*/
 
