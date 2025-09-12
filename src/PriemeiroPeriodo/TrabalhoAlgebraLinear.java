@@ -7,13 +7,23 @@ public class TrabalhoAlgebraLinear {
 
         Scanner entrada = new Scanner(System.in);
 
-        int[][] a = new int[2][2];
-        double[][] b = new double[2][2];
-        double[][] c = new double[2][2];
+        //declarção das variáveis (as matrizes)
+        double[][] a = new double[2][2]; //matriz inicial
+        double[][] b = new double[2][2]; //matriz adjunta
+        double[][] c = new double[2][2]; //matriz inversa
+
+        //ENTRADA DOS NÚMEROS QUE FORMAM A MATRIZ
+        /*
+        a[0][0] = entrada.nextInt();
+        a[0][1] = entrada.nextInt();
+        a[1][0] = entrada.nextInt();
+        a[1][1] = entrada.nextInt();
+         */
 
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 2; j++) {
                 a[i][j] = entrada.nextInt();
+                //leia(a[i][j])
             }
         }
 
@@ -22,18 +32,20 @@ public class TrabalhoAlgebraLinear {
         System.out.println(a[1][0] +" "+ a[1][1]);
 
         //determinate
-        int det = (a[0][0]*a[1][1]) - (a[0][1]*a[1][0]);
+        double det = (a[0][0]*a[1][1]) - (a[0][1]*a[1][0]);
 
         //determinate = 0 então a inversa não existe;
         if(det ==0) {
             System.out.println("a inversa dessa matriz não existe");
         }else{
+
+            //cria a matriz adjunta
             b[0][0] = a[1][1];
             b[0][1] = (-1) * a[0][1];
             b[1][0] = (-1) * a[1][0];
             b[1][1] = a[0][0];
 
-            System.out.println("---matriz com as posições trocadas---");
+            System.out.println("---matriz adjunta---");
             System.out.println(b[0][0] +" "+ b[0][1]);
             System.out.println(b[1][0] +" "+ b[1][1]);
 
@@ -42,6 +54,13 @@ public class TrabalhoAlgebraLinear {
                     c[i][j] = b[i][j]/det;
                 }
             }
+
+            /*
+            c[0][0] = b[0][0]/det;
+            c[0][1] = b[0][1]/det;
+            c[1][0] = b[1][0]/det;
+            c[1][1] = b[1][1]/det;
+             */
 
             System.out.println("---matriz inversa---");
             System.out.println(c[0][0] +" "+ c[0][1]);
