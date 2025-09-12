@@ -38,7 +38,6 @@ public class TrabalhoAlgebraLinear {
         if(det ==0) {
             System.out.println("a inversa dessa matriz não existe");
         }else{
-
             //cria a matriz adjunta
             b[0][0] = a[1][1];
             b[0][1] = (-1) * a[0][1];
