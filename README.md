@@ -6,9 +6,7 @@
 ## 🌟 Sobre Este Projeto
 
 Este repositório contém um conjunto de atividades e trabalhos que estou desenvolvendo na faculdade.
+O objetivo é fixar conhecimento dos conceitos básicos/intermediários em programação enquanto faço minhas atividades/trabalhos.
 
-## 🚀 Objetivos
-- Fixar conhecimento dos conceitos básicos/intermediários em programação enquanto faço minhas atividades.
-- 
 ## 📂 Projetos Incluídos
 - Atividades do Primeiro Período (doing)
