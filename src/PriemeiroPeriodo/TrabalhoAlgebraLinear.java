@@ -48,6 +48,7 @@ public class TrabalhoAlgebraLinear {
             System.out.println(b[0][0] +" "+ b[0][1]);
             System.out.println(b[1][0] +" "+ b[1][1]);
 
+            //MATRIZ INVERSA = CADA ELEMENTO DA MATRIZ ADJUNTA / DETERMINANTE
             for (int i = 0; i < 2; i++) {
                 for (int j = 0; j < 2; j++) {
                     c[i][j] = b[i][j]/det;
